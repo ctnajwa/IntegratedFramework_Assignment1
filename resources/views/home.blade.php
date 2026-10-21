@@ -82,23 +82,22 @@
             </article>
 
 
-            <!-- MEMBER 3 -->
+             <!-- MEMBER 3 -->
             <article id="member-three">
 
                 <img
-                    src="{{ asset('images/member3.jpg') }}"
-                    alt="Member 3 Profile Photo"
+                    src="{{ asset('images/aliyah.jpg') }}"
+                    alt="Aliyah Profile Photo"
                     width="180">
 
                 <h3>Aliyah</h3>
 
                 <p>
-                    A Software Engineering student
-                    interested in programming
-                    and creative problem-solving.
+                    A Computer Systems and Networking student passionate 
+                    about networking,and practical problem-solving.
                 </p>
 
-                <a href="{{ url('/about/member3') }}">
+                <a href="{{ url('/about/aliyah') }}">
                     About Me
                 </a>
 

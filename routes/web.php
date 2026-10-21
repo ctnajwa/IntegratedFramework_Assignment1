@@ -31,6 +31,11 @@ Route::get('/about/najwa', function () {
     return view('about-najwa');
 })->name('about.najwa');
 
+// Aliyah About Me Page
+Route::get('/about/aliyah', function () {
+    return view('about-aliyah');
+})->name('about.aliyah');
+
 Route::get('/contact', function () {
     return view('contact');
 })->name('contact');
