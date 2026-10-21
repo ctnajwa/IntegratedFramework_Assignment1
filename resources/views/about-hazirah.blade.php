@@ -1,132 +1,154 @@
+@extends('master')
 
-<!DOCTYPE html>
-<html lang="en">
+@section('title', 'About Hazirah')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+@section('content')
+    <div class="container">
 
-    <title>About Hazirah | Personal Profile</title>
-</head>
+        <section id="about-hazirah" class="mb-5">
+            <article >
+                <div >
+                    <div class="row align-items-center g-4">
+                        <div class="col-md-4 text-center">
+                            <img
+                                src="{{ asset('images/Hazirah.png') }}"
+                                alt="Hazirah"
+                                class="img-fluid rounded-circle"
+                                width="250"
+                                height="250"
+                            >
+                        </div>
 
-<body>
+                        <div class="col-md-8">
+                            <h1 >Hello! I'm Hazirah</h1>
 
-    <main>
+                            <p>
+                                I am currently pursuing a Bachelor
+                                of Computer Science (Software Engineering)
+                                at Universiti Malaysia Pahang
+                                Al-Sultan Abdullah (UMPSA).
+                            </p>
 
-        <!-- PERSONAL INTRODUCTION -->
-        <section id="about-hazirah">
-
-            <h1>Hello! I'm Hazirah</h1>
-
-            <p>
-                I am currently pursuing a Bachelor
-                of Computer Science (Software Engineering)
-                at Universiti Malaysia Pahang
-                Al-Sultan Abdullah (UMPSA).
-            </p>
-
-            <p>
-                I am passionate about web development,
-                programming, and learning new technologies.
-                I enjoy building websites and improving
-                my problem-solving skills through
-                software development projects.
-            </p>
-
+                            <p>
+                                I am passionate about web development,
+                                programming, and learning new technologies.
+                                I enjoy building websites and improving
+                                my problem-solving skills through
+                                software development projects.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
         </section>
 
-
-        <!-- EDUCATIONAL BACKGROUND -->
-        <section id="education">
-
+        <section id="education" class="mb-5">
             <h2>Educational Background</h2>
 
-            <h3>Universiti Malaysia Pahang
-                Al-Sultan Abdullah (UMPSA)</h3>
+            <article class="card">
+                <div class="card-body">
+                    <h3 class="card-title">
+                        Universiti Malaysia Pahang
+                        Al-Sultan Abdullah (UMPSA)
+                    </h3>
 
-            <p>
-                Bachelor of Computer Science
-                (Software Engineering)
-            </p>
+                    <p class="card-text">
+                        Bachelor of Computer Science
+                        (Software Engineering)
+                    </p>
 
-            <p>
-                Faculty of Computing
-            </p>
-
+                    <p class="card-text">Faculty of Computing</p>
+                </div>
+            </article>
         </section>
 
-
-        <!-- TECHNICAL SKILLS -->
-        <section id="skills">
-
+        <section id="skills" class="mb-5">
             <h2>My Skills</h2>
 
-            <article>
-                <h3>Programming Languages</h3>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <article class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Programming Languages</h3>
+                            <ul class="card-text">
+                                <li>Java</li>
+                                <li>JavaScript</li>
+                                <li>Python</li>
+                                <li>SQL</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
 
-                <ul>
-                    <li>Java</li>
-                    <li>JavaScript</li>
-                    <li>Python</li>
-                    <li>SQL</li>
-                </ul>
-            </article>
+                <div class="col-md-6 col-lg-4">
+                    <article class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Web Development</h3>
+                            <ul class="card-text">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
 
-            <article>
-                <h3>Web Development</h3>
-
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                </ul>
-            </article>
-
-            <article>
-                <h3>Tools</h3>
-
-                <ul>
-                    <li>Visual Studio Code</li>
-                    <li>GitHub</li>
-                </ul>
-            </article>
-
+                <div class="col-md-6 col-lg-4">
+                    <article class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Tools</h3>
+                            <ul class="card-text">
+                                <li>Visual Studio Code</li>
+                                <li>GitHub</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
         </section>
 
+        <section id="hobbies" class="mb-4">
+            <h2>My Hobbies &amp; Interests</h2>
 
- 
-<!-- HOBBIES -->
-<section id="hobbies">
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <article class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Jogging &amp; Running</h3>
+                            <p class="card-text">
+                                I enjoy jogging and running during
+                                my free time to stay active and healthy.
+                            </p>
+                        </div>
+                    </article>
+                </div>
 
-    <h2>My Hobbies & Interests</h2>
+                <div class="col-md-6 col-lg-4">
+                    <article class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Exploring Technology</h3>
+                            <p class="card-text">
+                                I enjoy discovering new technologies
+                                and learning about software development.
+                            </p>
+                        </div>
+                    </article>
+                </div>
 
-    <article>
-        <h3>Jogging & Running</h3>
+                <div class="col-md-6 col-lg-4">
+                    <article class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Listening to Music</h3>
+                            <p class="card-text">
+                                I love listening to music during my free time.
+                                Music helps me relax, improve my mood,
+                                and enjoy my daily activities.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-        <p>
-            I enjoy jogging and running during
-            my free time to stay active and healthy.
-        </p>
-    </article>
-
-    <article>
-        <h3>Exploring Technology</h3>
-
-        <p>
-            I enjoy discovering new technologies
-            and learning about software development.
-        </p>
-    </article>
-
-    <article>
-        <h3>Listening to Music</h3>
-
-        <p>
-            I love listening to music during my free time.
-            Music helps me relax, improve my mood,
-            and enjoy my daily activities.
-        </p>
-    </article>
-
-</section>
+    </div>
+@endsection

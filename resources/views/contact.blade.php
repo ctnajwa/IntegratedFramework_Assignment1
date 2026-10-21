@@ -1,32 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-</head>
-<body>
-    <h1>Contact Information</h1>
-    <br>
-    <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        <br><br>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <br><br>
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
-        <br><br>
-        <button type="submit" onclick="submitFunction()">Submit</button>
-    </form>
+@extends('master')
+
+@section('title', 'Contact Us')
+
+@section('content')
+    <div class="container">
+        <h1 class="section-title">Contact Information</h1>
+
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name:</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="message" class="form-label">Message:</label>
+                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+            </div>
+
+            <button type="submit" class="btn-accent" onclick="submitFunction()">Submit</button>
+        </form>
+    </div>
 
     <script>
         function submitFunction() {
-        alert("Message sent successfully!");
+            alert("Message sent successfully!");
         }
     </script>
-
-</body>
-</html>
+@endsection

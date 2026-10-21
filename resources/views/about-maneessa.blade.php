@@ -15,7 +15,7 @@
             <!-- PROFILE PHOTO -->
             <div class="col-md-4 text-center">
                 <img
-                    src="{{ asset('images/profile.jpg') }}"
+                    src="{{ asset('images/maneessa.jpg') }}"
                     alt="Maneessa A/P Chandrasekaran"
                     class="img-fluid rounded-circle"
                     width="250"
@@ -83,45 +83,7 @@
             </div>
         </article>
 
-        <article class="card mb-3">
-            <div class="card-body">
-
-                <h3 class="card-title">
-                    SMK Clifford
-                </h3>
-
-                <p class="card-text">
-                    Sijil Tinggi Persekolahan Malaysia (STPM)
-                </p>
-
-                <p class="card-text">
-                    2021 – 2022
-                </p>
-
-            </div>
-        </article>
-
-        <article class="card">
-            <div class="card-body">
-
-                <h3 class="card-title">
-                    SMK Raja Perempuan Kelsom
-                </h3>
-
-                <p class="card-text">
-                    Sijil Pelajaran Malaysia (SPM)
-                </p>
-
-                <p class="card-text">
-                    2020
-                </p>
-
-                <p class="card-text">
-                    Achievement: 5A
-                </p>
-
-            </div>
-        </article>
+       
 
     </section>
 

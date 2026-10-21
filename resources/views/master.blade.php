@@ -20,19 +20,20 @@
            1. GLOBAL DESIGN VARIABLES
         ======================================== */
         :root {
-            --bg-dark: #0b1020;
-            --bg-navbar: #0e1528;
-            --bg-card: #141c31;
-            --bg-footer: #080c18;
+            --palette-burgundy: #64242f;
+            --palette-red: #b44446;
+            --palette-rose: #fc8f8f;
+            --palette-gray: #dfd9d8;
 
-            --accent: #8b5cf6;
-            --accent-hover: #7c3aed;
-            --accent-light: #c4b5fd;
+            --bg-dark: var(--palette-gray);
+            --bg-navbar: var(--palette-burgundy);
+            --bg-card: #ffffff;
+            --bg-footer: var(--palette-burgundy);
 
-            --text-main: #f8fafc;
-            --text-muted: #a6b0c3;
+            --text-main: var(--palette-burgundy);
+            --text-muted: var(--palette-burgundy);
 
-            --border-color: rgba(255, 255, 255, 0.10);
+            --border-color: rgba(100, 36, 47, 0.18);
             --transition: 0.25s ease;
         }
 
@@ -66,7 +67,7 @@
 
         a:focus-visible,
         button:focus-visible {
-            outline: 3px solid var(--accent-light);
+            outline: 3px solid var(--palette-rose);
             outline-offset: 4px;
         }
 
@@ -85,7 +86,7 @@
         }
 
         .navbar-brand {
-            color: var(--text-main) !important;
+            color: #ffffff !important;
 
             font-size: 1.4rem;
             font-weight: 800;
@@ -93,7 +94,7 @@
         }
 
         .brand-accent {
-            color: var(--accent-light);
+            color: var(--palette-rose);
         }
 
         .navbar .nav-link {
@@ -102,7 +103,7 @@
             margin-left: 10px;
             padding: 8px 12px;
 
-            color: var(--text-muted);
+            color: var(--palette-gray);
             font-size: 0.95rem;
             font-weight: 600;
 
@@ -112,7 +113,7 @@
         .navbar .nav-link:hover,
         .navbar .nav-link:focus-visible,
         .navbar .nav-link.active {
-            color: var(--accent-light);
+            color: var(--palette-rose);
         }
 
         /* Active page indicator */
@@ -127,21 +128,38 @@
             height: 2px;
             border-radius: 5px;
 
-            background-color: var(--accent);
+            background-color: var(--bg-card);
+        }
+
+        .navbar .dropdown-menu {
+            background-color: var(--palette-rose);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+        }
+
+        .navbar .dropdown-item {
+            color: var(--palette-burgundy);
+        }
+
+        .navbar .dropdown-item:hover,
+        .navbar .dropdown-item:focus,
+        .navbar .dropdown-item.active {
+            color: var(--palette-burgundy);
+            background-color: var(--palette-rose);
         }
 
         /* Mobile menu toggle */
         .navbar-toggler {
-            border: 1px solid var(--accent);
+            border: 1px solid var(--palette-rose);
             padding: 7px 10px;
         }
 
         .navbar-toggler:focus {
-            box-shadow: 0 0 0 0.2rem rgba(139, 92, 246, 0.3);
+            box-shadow: 0 0 0 0.2rem rgba(252, 143, 143, 0.5);
         }
 
         .navbar-toggler-icon {
-            filter: invert(1);
+            filter: brightness(0) invert(1);
         }
 
         /* ========================================
@@ -161,7 +179,7 @@
 
             margin-bottom: 12px;
 
-            color: var(--accent-light);
+            color: var(--palette-red);
             font-size: 0.8rem;
             font-weight: 700;
             letter-spacing: 2px;
@@ -201,7 +219,7 @@
 
         .card:hover {
             transform: translateY(-4px);
-            border-color: rgba(167, 139, 250, 0.65);
+            border-color: var(--palette-red);
         }
 
         .card .card-title {
@@ -222,9 +240,9 @@
             padding: 10px 22px;
 
             color: #ffffff;
-            background-color: var(--accent);
+            background-color: var(--palette-red);
 
-            border: 1px solid var(--accent);
+            border: 1px solid var(--palette-red);
             border-radius: 8px;
 
             font-weight: 600;
@@ -236,8 +254,8 @@
 
         .btn-accent:hover {
             color: #ffffff;
-            background-color: var(--accent-hover);
-            border-color: var(--accent-hover);
+            background-color: var(--palette-burgundy);
+            border-color: var(--palette-burgundy);
         }
 
         .btn-outline-accent {
@@ -245,10 +263,10 @@
 
             padding: 10px 22px;
 
-            color: var(--accent-light);
+            color: var(--palette-burgundy);
             background-color: transparent;
 
-            border: 1px solid var(--accent);
+            border: 1px solid var(--palette-red);
             border-radius: 8px;
 
             font-weight: 600;
@@ -260,7 +278,7 @@
 
         .btn-outline-accent:hover {
             color: #ffffff;
-            background-color: var(--accent);
+            background-color: var(--palette-red);
         }
 
         /* ========================================
@@ -275,12 +293,12 @@
         .form-select {
             color: var(--text-main);
             background-color: var(--bg-card);
-            border: 1px solid #38445d;
+            border: 1px solid rgba(100, 36, 47, 0.3);
             border-radius: 8px;
         }
 
         .form-control::placeholder {
-            color: #a6b0c3;
+            color: var(--text-muted);
             opacity: 1;
         }
 
@@ -289,11 +307,11 @@
             color: var(--text-main);
             background-color: var(--bg-card);
 
-            border-color: var(--accent);
-            box-shadow: 0 0 0 0.2rem rgba(139, 92, 246, 0.2);
+            border-color: var(--palette-red);
+            box-shadow: 0 0 0 0.2rem rgba(180, 68, 70, 0.2);
         }
 
-        /* Keep browser autofill readable in dark mode */
+        /* Keep browser autofill text readable */
         .form-control:-webkit-autofill,
         .form-control:-webkit-autofill:hover,
         .form-control:-webkit-autofill:focus {
@@ -307,15 +325,15 @@
         .site-footer {
             padding: 24px 0;
 
-            color: var(--text-muted);
+            color: var(--palette-gray);
             background-color: var(--bg-footer);
 
-            border-top: 1px solid var(--border-color);
+            border-top: 1px solid rgba(223, 217, 216, 0.3);
             font-size: 0.9rem;
         }
 
         .footer-accent {
-            color: var(--accent-light);
+            color: var(--palette-rose);
             font-weight: 600;
         }
 
@@ -407,23 +425,65 @@
                     <!-- Home -->
                     <li class="nav-item">
                         <a
-                            class="nav-link {{ request()->routeIs('home') ? 'active' : '' }}"
+                            class="nav-link {{ request()->routeIs('home') || request()->is('/') ? 'active' : '' }}"
                             href="{{ route('home') }}"
-                            @if(request()->routeIs('home')) aria-current="page" @endif
+                            @if(request()->routeIs('home') || request()->is('/')) aria-current="page" @endif
                         >
                             Home
                         </a>
                     </li>
 
-                    <!-- About Me -->
-                    <li class="nav-item">
+                    <!-- About Us dropdown -->
+                    <li class="nav-item dropdown">
                         <a
-                            class="nav-link {{ request()->routeIs('about') ? 'active' : '' }}"
-                            href="{{ route('about') }}"
-                            @if(request()->routeIs('about')) aria-current="page" @endif
+                            class="nav-link dropdown-toggle {{ request()->routeIs('about.*') ? 'active' : '' }}"
+                            href="#"
+                            id="aboutUsDropdown"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                            @if(request()->routeIs('about.*')) aria-current="page" @endif
                         >
-                            About Me
+                            About Us
                         </a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutUsDropdown">
+                            <li>
+                                <a
+                                    class="dropdown-item {{ request()->routeIs('about.hazirah') ? 'active' : '' }}"
+                                    href="{{ route('about.hazirah') }}"
+                                    @if(request()->routeIs('about.hazirah')) aria-current="page" @endif
+                                >
+                                    Hazirah
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    class="dropdown-item {{ request()->routeIs('about.aliyah') ? 'active' : '' }}"
+                                    href="{{ route('about.aliyah') }}"
+                                    @if(request()->routeIs('about.aliyah')) aria-current="page" @endif
+                                >
+                                    Aliyah
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    class="dropdown-item {{ request()->routeIs('about.najwa') ? 'active' : '' }}"
+                                    href="{{ route('about.najwa') }}"
+                                    @if(request()->routeIs('about.najwa')) aria-current="page" @endif
+                                >
+                                    Najwa
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    class="dropdown-item {{ request()->routeIs('about.maneessa') ? 'active' : '' }}"
+                                    href="{{ route('about.maneessa') }}"
+                                    @if(request()->routeIs('about.maneessa')) aria-current="page" @endif
+                                >
+                                    Maneessa
+                                </a>
+                            </li>
+                        </ul>
                     </li>
 
                     <!-- Contact -->
