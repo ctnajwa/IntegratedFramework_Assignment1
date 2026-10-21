@@ -63,8 +63,8 @@
             <article id="member-two">
 
                 <img
-                    src="{{ asset('images/member2.jpg') }}"
-                    alt="Member 2 Profile Photo"
+                    src="{{ asset('images/najwa.jpg') }}"
+                    alt="Najwa Profile Photo"
                     width="180">
 
                 <h3>Najwa</h3>
@@ -75,7 +75,7 @@
                     and software development.
                 </p>
 
-                <a href="{{ url('/about/member2') }}">
+                <a href="{{ url('/about/najwa') }}">
                     About Me
                 </a>
 
@@ -128,6 +128,14 @@
             </article>
 
         </section>
+        <div>
+            <h3>Feel free to contact us!</h3>
+            <button>
+                <a href="{{ url('/contact') }}">
+                    Contact Us
+                </a>
+            </button>
+        </div>
 
     </main>
 

@@ -26,6 +26,10 @@ Route::get('/about/hazirah', function () {
     return view('about-hazirah');
 })->name('about.hazirah');
 
+// Najwa About Me Page
+Route::get('/about/najwa', function () {
+    return view('about-najwa');
+})->name('about.najwa');
 
 Route::get('/contact', function () {
     return view('contact');
