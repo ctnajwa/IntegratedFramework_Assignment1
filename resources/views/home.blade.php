@@ -4,76 +4,126 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Hazirah Portfolio</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Home | Group Personal Profile</title>
 </head>
 
 <body>
 
-    <!-- HOME PAGE -->
     <main>
 
-        <!-- INTRODUCTION SECTION -->
-        <section id="introduction">
+        <!-- HOME INTRODUCTION -->
+        <section id="home-introduction">
 
-            <h1>Hello, I'm Hazirah</h1>
-
-            <h2>Software Engineering Student</h2>
+            <h1>Welcome to Our Personal Profile Website</h1>
 
             <p>
-                Welcome to my personal portfolio!
-                I am a Software Engineering student
-                who is passionate about technology,
-                programming, and web development.
+                Get to know our team of four
+                students.
+                Explore our backgrounds, skills,
+                and interests.
             </p>
 
-            <!-- Navigation to About Page -->
-            <a href="/about">
-                Get to Know Me
-            </a>
+        </section>
 
-            <!-- Profile Picture -->
-            <div>
+
+        <!-- TEAM MEMBERS SECTION -->
+        <section id="team-members">
+
+            <h2>Meet Our Team</h2>
+
+            <!-- MEMBER 1: HAZIRAH -->
+            <article id="member-hazirah">
+
                 <img
                     src="{{ asset('images/profile.jpg') }}"
-                    alt="Hazirah's Profile Photo"
-                    width="250">
-            </div>
+                    alt="Hazirah Profile Photo"
+                    width="180">
 
-        </section>
+                <h3>Hazirah</h3>
 
+                <p>
+                    A Software Engineering student
+                    passionate about web development,
+                    programming, and technology.
+                </p>
 
-        <!-- SHORT ABOUT SECTION -->
-        <section id="about-preview">
+                <a href="{{ url('/about/hazirah') }}">
+                    About Me
+                </a>
 
-            <h2>A Little About Me</h2>
-
-            <p>
-                I enjoy exploring new technologies,
-                developing creative solutions,
-                and continuously improving my skills.
-            </p>
-
-            <a href="/about">
-                More About Me
-            </a>
-
-        </section>
+            </article>
 
 
-        <!-- CONTACT SECTION -->
-        <section id="contact-preview">
+            <!-- MEMBER 2 -->
+            <article id="member-two">
 
-            <h2>Let's Connect!</h2>
+                <img
+                    src="{{ asset('images/member2.jpg') }}"
+                    alt="Member 2 Profile Photo"
+                    width="180">
 
-            <p>
-                Interested in knowing more about me?
-                Feel free to get in touch!
-            </p>
+                <h3>Member 2 Name</h3>
 
-            <a href="/contact">
-                Contact Me
-            </a>
+                <p>
+                    A Software Engineering student
+                    interested in technology
+                    and software development.
+                </p>
+
+                <a href="{{ url('/about/member2') }}">
+                    About Me
+                </a>
+
+            </article>
+
+
+            <!-- MEMBER 3 -->
+            <article id="member-three">
+
+                <img
+                    src="{{ asset('images/member3.jpg') }}"
+                    alt="Member 3 Profile Photo"
+                    width="180">
+
+                <h3>Member 3 Name</h3>
+
+                <p>
+                    A Software Engineering student
+                    interested in programming
+                    and creative problem-solving.
+                </p>
+
+                <a href="{{ url('/about/member3') }}">
+                    About Me
+                </a>
+
+            </article>
+
+
+            <!-- MEMBER 4 -->
+            <article id="member-four">
+
+                <img
+                    src="{{ asset('images/member4.jpg') }}"
+                    alt="Member 4 Profile Photo"
+                    width="180">
+
+                <h3>Member 4 Name</h3>
+
+                <p>
+                    A Software Engineering student
+                    interested in developing
+                    innovative digital solutions.
+                </p>
+
+                <a href="{{ url('/about/member4') }}">
+                    About Me
+                </a>
+
+            </article>
 
         </section>
 
