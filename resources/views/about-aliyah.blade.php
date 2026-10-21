@@ -66,7 +66,7 @@
                 <h3>Networking</h3>
 
                 <ul>
-                    <li>Configuration Devices /li>
+                    <li>Configuration Devices </li>
                     <li>Routing and Switching</li>
                     <li>IP Addressing and Subnetting</li>
                 </ul>
