@@ -21,9 +21,11 @@ Route::get('/home', function () {
     return view('home');
 })->name('home');
 
-Route::get('/about', function () {
-    return view('about');
-});
+// Hazirah About Me Page
+Route::get('/about/hazirah', function () {
+    return view('about-hazirah');
+})->name('about.hazirah');
+
 
 Route::get('/contact', function () {
     return view('contact');
