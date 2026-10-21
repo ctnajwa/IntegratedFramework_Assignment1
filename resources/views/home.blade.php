@@ -45,9 +45,11 @@
                 <h3>Hazirah</h3>
 
                 <p>
-                    A Software Engineering student
-                    passionate about web development,
-                    programming, and technology.
+                    A final-year Computer Science student majoring
+                     in Software Engineering at UMPSA. Passionate
+                     about developing innovative digital solutions,
+                     exploring emerging technologies, and continuously
+                     enhancing my technical and problem-solving skills.
                 </p>
 
                 <a href="{{ url('/about/hazirah') }}">
