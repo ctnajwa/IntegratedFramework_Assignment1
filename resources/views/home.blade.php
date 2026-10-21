@@ -38,7 +38,7 @@
             <article id="member-hazirah">
 
                 <img
-                    src="{{ asset('images/profile.jpg') }}"
+                    src="{{ asset('images/Hazirah.png') }}"
                     alt="Hazirah Profile Photo"
                     width="180">
 
@@ -65,7 +65,7 @@
                     alt="Member 2 Profile Photo"
                     width="180">
 
-                <h3>Member 2 Name</h3>
+                <h3>Najwa</h3>
 
                 <p>
                     A Software Engineering student
@@ -88,7 +88,7 @@
                     alt="Member 3 Profile Photo"
                     width="180">
 
-                <h3>Member 3 Name</h3>
+                <h3>Aliyah</h3>
 
                 <p>
                     A Software Engineering student
@@ -111,7 +111,7 @@
                     alt="Member 4 Profile Photo"
                     width="180">
 
-                <h3>Member 4 Name</h3>
+                <h3>Maneesha</h3>
 
                 <p>
                     A Software Engineering student
